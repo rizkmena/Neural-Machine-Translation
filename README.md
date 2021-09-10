@@ -27,7 +27,7 @@ independently:
 `i went shopping → iway entway oppingshay`
   
 ## Data
-The data for this task consists of pairs of words![formula](https://render.githubusercontent.com/render/math?math=$\left\{\left(s^{(i)}, t^{(i)}\right)\right\}_{i=1}^{N}$) where the *source* $s^{(i)}$
+The data for this task consists of pairs of words ![formula](https://render.githubusercontent.com/render/math?math=$\left\{\left(s^{(i)}, t^{(i)}\right)\right\}_{i=1}^{N}$) where the *source* $s^{(i)}$
 is an English word, and the *target* $t^{(i)}$ is its translation in Pig-Latin. 
 
 The dataset is composed of unique words from the book *Sense and Sensibility*, by Jane Austen. The vocabulary consists of 29 tokens:
