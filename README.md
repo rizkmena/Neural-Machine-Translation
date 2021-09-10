@@ -11,6 +11,7 @@ basis):
 and the letters “ay” are added to the end: 
 
   `team → eamtay`.
+  
 2. If the first letter is a *vowel*, then the word is left unchanged and the letters “way” are added
 to the end: 
   
