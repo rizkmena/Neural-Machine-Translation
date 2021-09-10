@@ -4,7 +4,7 @@ In this project, we train a few attention-based neural machine translation (NMT)
 translate words from English to Pig-Latin. Along the way, we explore several
 important concepts in NMT, including gated *recurrent neural networks* and *attention*.
 
-##Pig-Latin Crash Course
+## Pig-Latin Crash Course
 Pig Latin is a simple transformation of English based on the following rules (applied on a per-word
 basis):
 1. If the first letter of a word is a *consonant*, then the letter is moved to the end of the word,
