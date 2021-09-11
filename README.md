@@ -37,7 +37,7 @@ unique (English, Pig-Latin) pairs in total; the first few examples are:
 
 <p align="center"> { (the, ethay), (family, amilyfay), (of, ofway), ... } </p>
  <br> 
-In order to simplify the processing of *mini-batches* of words, the word pairs are grouped based
+In order to simplify the processing of _mini-batches_ of words, the word pairs are grouped based
 on the lengths of the source and target. Thus, in each mini-batch the source words are all the same
 length, and the target words are all the same length. This simplifies the code, as we don’t have to
 worry about batches of variable-length sequences.
