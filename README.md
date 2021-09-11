@@ -25,7 +25,7 @@ To translate a whole sentence from English to Pig-Latin, we simply apply these r
 independently:
 <br>
 `i went shopping → iway entway oppingshay`
-  
+
 ## Data
 The data for this task consists of pairs of words <a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\left(s^{(i)},&space;t^{(i)}\right)\right\}_{i=1}^{N}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\left\{\left(s^{(i)},&space;t^{(i)}\right)\right\}_{i=1}^{N}" title="\left\{\left(s^{(i)}, t^{(i)}\right)\right\}_{i=1}^{N}" /></a> where the *source* <a href="https://www.codecogs.com/eqnedit.php?latex=s^{(i)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?s^{(i)}" title="s^{(i)}" /></a>
 is an English word, and the *target* <a href="https://www.codecogs.com/eqnedit.php?latex=t^{(i)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?t^{(i)}" title="t^{(i)}" /></a> is its translation in Pig-Latin. 
@@ -35,8 +35,8 @@ the 26 standard alphabet letters (all lowercase), the dash symbol -, and two spe
 and `<EOS>` that denote the start and end of a sequence, respectively. The dataset contains 6387
 unique (English, Pig-Latin) pairs in total; the first few examples are:
 
-<center> { (the, ethay), (family, amilyfay), (of, ofway), ... } </center>
-
+<p align="center"> { (the, ethay), (family, amilyfay), (of, ofway), ... } </p>
+ <br> 
 In order to simplify the processing of *mini-batches* of words, the word pairs are grouped based
 on the lengths of the source and target. Thus, in each mini-batch the source words are all the same
 length, and the target words are all the same length. This simplifies the code, as we don’t have to
