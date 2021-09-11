@@ -27,8 +27,8 @@ independently:
 `i went shopping → iway entway oppingshay`
   
 ## Data
-The data for this task consists of pairs of words ![formula](<a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\left(s^{(i)},&space;t^{(i)}\right)\right\}_{i=1}^{N}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\left\{\left(s^{(i)},&space;t^{(i)}\right)\right\}_{i=1}^{N}" title="\left\{\left(s^{(i)}, t^{(i)}\right)\right\}_{i=1}^{N}" /></a>) where the *source* $s^{(i)}$
-is an English word, and the *target* $t^{(i)}$ is its translation in Pig-Latin. 
+The data for this task consists of pairs of words <a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\left(s^{(i)},&space;t^{(i)}\right)\right\}_{i=1}^{N}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\left\{\left(s^{(i)},&space;t^{(i)}\right)\right\}_{i=1}^{N}" title="\left\{\left(s^{(i)}, t^{(i)}\right)\right\}_{i=1}^{N}" /></a> where the *source* <a href="https://www.codecogs.com/eqnedit.php?latex=s^{(i)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?s^{(i)}" title="s^{(i)}" /></a>
+is an English word, and the *target* <a href="https://www.codecogs.com/eqnedit.php?latex=t^{(i)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?t^{(i)}" title="t^{(i)}" /></a> is its translation in Pig-Latin. 
 
 The dataset is composed of unique words from the book *Sense and Sensibility*, by Jane Austen. The vocabulary consists of 29 tokens:
 the 26 standard alphabet letters (all lowercase), the dash symbol -, and two special tokens `<SOS>`
@@ -41,4 +41,13 @@ In order to simplify the processing of *mini-batches* of words, the word pairs a
 on the lengths of the source and target. Thus, in each mini-batch the source words are all the same
 length, and the target words are all the same length. This simplifies the code, as we don’t have to
 worry about batches of variable-length sequences.
+  
+## Project Outline
+
+Throughout this project, we implement some attention-based neural machine
+translation models, and finally train the models and examine the results. We begin with first implementing the three main building blocks: gated recurrent unit (GRU), additive attention, and scaled dot-product attention. Using these building blocks, we implement two encoders (RNN and transformer encoders) and three decoders (RNN, RNN+additive attention and transformer decoders). The project is split into three parts, each of which investigating a unique encoder-decoder combination from the ones described:
+
+* Part 1: (RNN encoder) + (RNN decoder)
+* Part 2: (RNN encoder) + (RNN decoder with additive attention)
+* Part 3: (Transformer encoder) + (Transformer decoder)
 
